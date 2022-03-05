@@ -1,0 +1,6 @@
+D:\programming\c# colledge\WSR\VIN_LIB\bin\Debug\VIN_LIB.dll
+D:\programming\c# colledge\WSR\VIN_LIB\bin\Debug\VIN_LIB.pdb
+D:\programming\c# colledge\WSR\VIN_LIB\obj\Debug\VIN_LIB.csproj.AssemblyReference.cache
+D:\programming\c# colledge\WSR\VIN_LIB\obj\Debug\VIN_LIB.csproj.CoreCompileInputs.cache
+D:\programming\c# colledge\WSR\VIN_LIB\obj\Debug\VIN_LIB.dll
+D:\programming\c# colledge\WSR\VIN_LIB\obj\Debug\VIN_LIB.pdb
