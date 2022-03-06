@@ -29,7 +29,8 @@ namespace WSR
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             VIN_LIB.VIN_LIB vIN_LIB = new VIN_LIB.VIN_LIB();
-            MessageBox.Show(vIN_LIB.CheckVIN(enter_vin.Text).ToString());
+            // MessageBox.Show(vIN_LIB.CheckVIN(enter_vin.Text).ToString());
+            MessageBox.Show(vIN_LIB.GetTransportYear(enter_vin.Text).ToString());
         }
     }
 }

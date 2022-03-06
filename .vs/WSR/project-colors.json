@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "9a50f2e0-e871-4a78-9eb2-2fc3e941d5d2": {
+      "ProjectGuid": "9a50f2e0-e871-4a78-9eb2-2fc3e941d5d2",
+      "DisplayName": "WSR",
+      "ColorIndex": 0
+    },
+    "3883685c-d984-4074-b0aa-d05df0c6300b": {
+      "ProjectGuid": "3883685c-d984-4074-b0aa-d05df0c6300b",
+      "DisplayName": "VIN_LIB",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 2
+}

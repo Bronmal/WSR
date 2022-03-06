@@ -95,7 +95,31 @@ namespace VIN_LIB
 
         public int GetTransportYear(String vin)
         {
-            return 1;
+            Dictionary<int, char> char_years = new Dictionary<int, char>();
+            char[] alphabet = new char[30]
+            {
+                'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'R', 'S', 'T', 'V', 'W', 'X', 'Y', '1', '2', '3', '4', '5', '6', '7', '8', '9'
+            };
+            int years = 1980;
+            int year_now = DateTime.Now.Year;
+            while (years < year_now)
+            {
+                foreach (char i in alphabet)
+                {
+                    char_years.Add(years, i);
+                    years++;
+                }
+            }
+            char[] char_numbers_vin = vin.ToArray();
+            foreach (char i in char_years.Values)
+            {
+                if (i == char_numbers_vin[9])
+                {
+                    return char_years.Where(x => x.Value == i).FirstOrDefault().Key;
+
+                }
+            }
+            return -1;
         }
     }
 }
