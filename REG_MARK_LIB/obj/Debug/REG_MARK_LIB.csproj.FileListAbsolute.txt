@@ -1,0 +1,6 @@
+D:\programming\c# colledge\WSR\REG_MARK_LIB\bin\Debug\REG_MARK_LIB.dll
+D:\programming\c# colledge\WSR\REG_MARK_LIB\bin\Debug\REG_MARK_LIB.pdb
+D:\programming\c# colledge\WSR\REG_MARK_LIB\obj\Debug\REG_MARK_LIB.csproj.AssemblyReference.cache
+D:\programming\c# colledge\WSR\REG_MARK_LIB\obj\Debug\REG_MARK_LIB.csproj.CoreCompileInputs.cache
+D:\programming\c# colledge\WSR\REG_MARK_LIB\obj\Debug\REG_MARK_LIB.dll
+D:\programming\c# colledge\WSR\REG_MARK_LIB\obj\Debug\REG_MARK_LIB.pdb

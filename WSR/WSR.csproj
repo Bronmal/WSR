@@ -95,6 +95,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\REG_MARK_LIB\REG_MARK_LIB.csproj">
+      <Project>{7a73f51f-f32b-47b4-a35c-a302e31b2954}</Project>
+      <Name>REG_MARK_LIB</Name>
+    </ProjectReference>
     <ProjectReference Include="..\VIN_LIB\VIN_LIB.csproj">
       <Project>{3883685c-d984-4074-b0aa-d05df0c6300b}</Project>
       <Name>VIN_LIB</Name>

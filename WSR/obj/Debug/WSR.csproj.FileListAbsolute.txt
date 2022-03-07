@@ -17,3 +17,5 @@ D:\programming\c# colledge\WSR\WSR\obj\Debug\WSR.csproj.CoreCompileInputs.cache
 D:\programming\c# colledge\WSR\WSR\obj\Debug\WSR.csproj.CopyComplete
 D:\programming\c# colledge\WSR\WSR\obj\Debug\WSR.exe
 D:\programming\c# colledge\WSR\WSR\obj\Debug\WSR.pdb
+D:\programming\c# colledge\WSR\WSR\bin\Debug\REG_MARK_LIB.dll
+D:\programming\c# colledge\WSR\WSR\bin\Debug\REG_MARK_LIB.pdb
