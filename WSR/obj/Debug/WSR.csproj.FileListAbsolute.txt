@@ -39,3 +39,21 @@ C:\Users\ClassUser\3D Objects\объекты\WSR\WSR\obj\Debug\WSR.csproj.CoreCo
 C:\Users\ClassUser\3D Objects\объекты\WSR\WSR\obj\Debug\WSR.csproj.CopyComplete
 C:\Users\ClassUser\3D Objects\объекты\WSR\WSR\obj\Debug\WSR.exe
 C:\Users\ClassUser\3D Objects\объекты\WSR\WSR\obj\Debug\WSR.pdb
+C:\Users\classuser.SPBRTK\Documents\us\WSR\WSR\bin\Debug\WSR.exe.config
+C:\Users\classuser.SPBRTK\Documents\us\WSR\WSR\obj\Debug\WSR.exe
+C:\Users\classuser.SPBRTK\Documents\us\WSR\WSR\obj\Debug\WSR.pdb
+C:\Users\classuser.SPBRTK\Documents\us\WSR\WSR\bin\Debug\WSR.exe
+C:\Users\classuser.SPBRTK\Documents\us\WSR\WSR\bin\Debug\WSR.pdb
+C:\Users\classuser.SPBRTK\Documents\us\WSR\WSR\bin\Debug\REG_MARK_LIB.dll
+C:\Users\classuser.SPBRTK\Documents\us\WSR\WSR\bin\Debug\VIN_LIB.dll
+C:\Users\classuser.SPBRTK\Documents\us\WSR\WSR\bin\Debug\REG_MARK_LIB.pdb
+C:\Users\classuser.SPBRTK\Documents\us\WSR\WSR\bin\Debug\VIN_LIB.pdb
+C:\Users\classuser.SPBRTK\Documents\us\WSR\WSR\obj\Debug\WSR.csprojResolveAssemblyReference.cache
+C:\Users\classuser.SPBRTK\Documents\us\WSR\WSR\obj\Debug\MainWindow.g.cs
+C:\Users\classuser.SPBRTK\Documents\us\WSR\WSR\obj\Debug\App.g.cs
+C:\Users\classuser.SPBRTK\Documents\us\WSR\WSR\obj\Debug\WSR_MarkupCompile.cache
+C:\Users\classuser.SPBRTK\Documents\us\WSR\WSR\obj\Debug\WSR_MarkupCompile.lref
+C:\Users\classuser.SPBRTK\Documents\us\WSR\WSR\obj\Debug\MainWindow.baml
+C:\Users\classuser.SPBRTK\Documents\us\WSR\WSR\obj\Debug\WSR.g.resources
+C:\Users\classuser.SPBRTK\Documents\us\WSR\WSR\obj\Debug\WSR.Properties.Resources.resources
+C:\Users\classuser.SPBRTK\Documents\us\WSR\WSR\obj\Debug\WSR.csproj.GenerateResource.Cache

@@ -12,12 +12,12 @@ namespace VIN_LIB
             {
                 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'R', 'S', 'T', 'V', 'W', 'X', 'Y', '1', '2', '3', '4', '5', '6', '7', '8', '9'
             };
-        public char[] alphabet_codes = new char[30]
+        public char[] alphabet_codes = new char[35]
             {
-                'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'R', 'S', 'T', 'V', 'W', 'X', 'Y', '1', '2', '3', '4', '5', '6', '7', '8', '9'
+                'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'
             };
         private string countryCodes =
-            "AA-AH ЮАРAJ-AN Котд'Ивуар;BA-BE Ангола;BF-BK Кения;BL-BR Танзания;CA-CE Бенин;CF-CK Мадагаскар;CL-CR Тунис;DA-DE " +
+            "AA-AH ЮАР;AJ-AN Котд'Ивуар;BA-BE Ангола;BF-BK Кения;BL-BR Танзания;CA-CE Бенин;CF-CK Мадагаскар;CL-CR Тунис;DA-DE " +
             "Египет;DF-DK Марокко;DL-DR Замбия;EA-EE Эфиопия;EF-EK Мозамбик;FA-FE Гана;FF-FK Нигерия;JA-JT Япония;KA-KE " +
             "ШриЛанка;KF-KK Израиль;KL-KR Южная Корея;KS-K0 Казахстан;LA-L0 Китай;MA-ME Индия;MF-MK Индонезия;ML-MR " +
             "Таиланд;NF-NK Пакистан;NL-NR Турция;PA-PE Филиппины;PF-PK Сингапур;PL-PR Малайзия;RA-RE ОАЭ;RF-RK Тайвань;RL-RR " +
@@ -112,6 +112,7 @@ namespace VIN_LIB
 
         public String GetVINCountry(String vin)
         {
+            char[] char_numbers_vin = vin.ToArray();
             Dictionary<string, string> countries = new Dictionary<string, string>();
             string[] country_codes = countryCodes.Split(';');
             foreach (string code in country_codes)
@@ -128,16 +129,31 @@ namespace VIN_LIB
                         codeInfo[1]);
             }
 
-            List<string> codes = new List<string>();
+            List<Dictionary<string, List<string>>> codes = new List<Dictionary<string, List<string>>>();
             foreach (var i in countries)
-            {          
-                for (int c = Array.IndexOf(alphabet_codes, i.Key.ToArray()[2]); c < Array.IndexOf(alphabet_codes, i.Key.ToArray()[4])-1; c++)
+            {
+                Dictionary<string, List<string>> a = new Dictionary<string, List<string>>();
+                List<string> code = new List<string>();
+                for (int c = Array.IndexOf(alphabet_codes, i.Key.ToArray()[2]); c < Array.IndexOf(alphabet_codes, i.Key.ToArray()[4]); c++)
                 {
-                    codes.Add(i.Key.ToArray()[0].ToString() + alphabet[c]);
+                    code.Add(i.Key.ToArray()[0].ToString() + alphabet_codes[c]);
+                }
+                a.Add(i.Value, code);
+                codes.Add(a);
+            }
+            foreach(Dictionary<string, List<string>> i in codes)
+            {
+                foreach(List<string> b in i.Values)
+                {
+                    foreach(string c in b.ToArray())
+                    {
+                        if (c == char_numbers_vin[0].ToString() + char_numbers_vin[1].ToString())
+                        {
+                            return i.Where(x => x.Value == b).FirstOrDefault().Key;
+                        }
+                    }
                 }
             }
-
-
             return vin;
         }
                 

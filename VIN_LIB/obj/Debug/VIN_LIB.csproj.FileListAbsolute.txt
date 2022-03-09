@@ -10,3 +10,8 @@ C:\Users\ClassUser\3D Objects\объекты\WSR\VIN_LIB\obj\Debug\VIN_LIB.cspro
 C:\Users\ClassUser\3D Objects\объекты\WSR\VIN_LIB\obj\Debug\VIN_LIB.csproj.CoreCompileInputs.cache
 C:\Users\ClassUser\3D Objects\объекты\WSR\VIN_LIB\obj\Debug\VIN_LIB.dll
 C:\Users\ClassUser\3D Objects\объекты\WSR\VIN_LIB\obj\Debug\VIN_LIB.pdb
+C:\Users\classuser.SPBRTK\Documents\us\WSR\VIN_LIB\bin\Debug\VIN_LIB.dll
+C:\Users\classuser.SPBRTK\Documents\us\WSR\VIN_LIB\bin\Debug\VIN_LIB.pdb
+C:\Users\classuser.SPBRTK\Documents\us\WSR\VIN_LIB\obj\Debug\VIN_LIB.csprojResolveAssemblyReference.cache
+C:\Users\classuser.SPBRTK\Documents\us\WSR\VIN_LIB\obj\Debug\VIN_LIB.dll
+C:\Users\classuser.SPBRTK\Documents\us\WSR\VIN_LIB\obj\Debug\VIN_LIB.pdb
