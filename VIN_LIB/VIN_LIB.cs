@@ -154,7 +154,7 @@ namespace VIN_LIB
                     }
                 }
             }
-            return vin;
+            return "Не правильный вин номер";
         }
                 
 
