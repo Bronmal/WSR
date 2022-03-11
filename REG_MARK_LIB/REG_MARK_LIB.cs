@@ -10,16 +10,16 @@ namespace REG_MARK_LIB
     {
         public Boolean CheckMark(string mark)
         {
-            char[] alpabet = new char[12] { 'A', 'B', 'E', 'K', 'M', 'H', 'O', 'P', 'C', 'T', 'Y', 'X' };
-            char[] char_mark_array = mark.ToCharArray();
-            char[] check_letters = new char[3] { char_mark_array[0], char_mark_array[4], char_mark_array[5] };
-            foreach (char i in check_letters)
+            char[] alpabet = new char[22] { 'A', 'B', 'E', 'K', 'M', 'H', 'O', 'P', 'C', 'T', 'Y', 'X', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+            char[] char_mark_array = mark.ToUpper().ToCharArray();
+            foreach (char i in char_mark_array)
             {
                 if (!alpabet.Contains(i))
                 {
                     return false;
                 }
             }
+
             return true;
         }
 

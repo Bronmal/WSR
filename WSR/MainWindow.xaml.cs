@@ -31,9 +31,9 @@ namespace WSR
             VIN_LIB.VIN_LIB vIN_LIB = new VIN_LIB.VIN_LIB();
             REG_MARK_LIB.REG_MARK_LIB rEG_MARK_LIB = new REG_MARK_LIB.REG_MARK_LIB();
             // MessageBox.Show(vIN_LIB.CheckVIN(enter_vin.Text).ToString());
-            MessageBox.Show(vIN_LIB.GetVINCountry(enter_vin.Text).ToString());
+            // MessageBox.Show(vIN_LIB.GetVINCountry(enter_vin.Text).ToString());
             // MessageBox.Show(vIN_LIB.GetTransportYear(enter_vin.Text).ToString());
-            // MessageBox.Show(rEG_MARK_LIB.CheckMark(enter_vin.Text).ToString());
+            MessageBox.Show(rEG_MARK_LIB.CheckMark(enter_vin.Text).ToString());
 
         }
     }
