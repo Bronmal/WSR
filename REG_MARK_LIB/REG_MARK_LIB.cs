@@ -9,7 +9,7 @@ namespace REG_MARK_LIB
 {
     public class REG_MARK_LIB
     {
-        private String GetValue(Match matched, String key)
+        private string GetValue(Match matched, String key)
         {
             if (matched.Success)
                 return matched.Groups[key].Value;
@@ -19,7 +19,7 @@ namespace REG_MARK_LIB
         private readonly Regex reg = new Regex(
             @"^(?<before>[abekmhopctyx])(?<number>[0-9]{3})(?<after>[abekmhopctyx]{2})(?<region>[0-9]{2,3})$",
             RegexOptions.IgnoreCase | RegexOptions.Compiled);
-        public Boolean CheckMark(string mark)
+        public bool CheckMark(string mark)
         {
             MatchCollection matches = reg.Matches(mark);
             if (matches.Count == 0)
@@ -28,6 +28,17 @@ namespace REG_MARK_LIB
             }
 
             return true;
+        }
+
+        public string GetNextMarkAfter(string mark)
+        {
+            MatchCollection matches = reg.Matches(mark);
+            string region = "";
+            foreach (Match match in matches)
+            {
+                region = GetValue(match, "region");
+            }
+            return region;
         }
 
     }
