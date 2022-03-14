@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище GAI_ModelContainer" CdmEntityContainer="GAI_Entities">
+    <EntitySetMapping Name="region_info">
+      <EntityTypeMapping TypeName="GAI_Model.region_info">
+        <MappingFragment StoreEntitySet="region_info">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="region_name_en" ColumnName="region_name_en" />
+          <ScalarProperty Name="region_name_ru" ColumnName="region_name_ru" />
+          <ScalarProperty Name="subject_code" ColumnName="subject_code" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="code_okato" ColumnName="code_okato" />
+          <ScalarProperty Name="iso" ColumnName="iso" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
