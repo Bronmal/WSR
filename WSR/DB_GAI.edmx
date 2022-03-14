@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище GAI_Model" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "WSR_GAI.dbo.region_info" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+        <EntityType Name="region_info">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="region_name_en" />
+            <PropertyRef Name="region_name_ru" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="region_name_en" Type="nvarchar" MaxLength="80" Nullable="false" />
+          <Property Name="region_name_ru" Type="nchar" MaxLength="80" Nullable="false" />
+          <Property Name="subject_code" Type="int" />
+          <Property Name="code" Type="nchar" MaxLength="50" />
+          <Property Name="code_okato" Type="nchar" MaxLength="15" />
+          <Property Name="iso" Type="nchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="Хранилище GAI_ModelContainer">
+          <EntitySet Name="region_info" EntityType="Self.region_info" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [region_info].[id] AS [id], 
+    [region_info].[region_name_en] AS [region_name_en], 
+    [region_info].[region_name_ru] AS [region_name_ru], 
+    [region_info].[subject_code] AS [subject_code], 
+    [region_info].[code] AS [code], 
+    [region_info].[code_okato] AS [code_okato], 
+    [region_info].[iso] AS [iso]
+    FROM [dbo].[region_info] AS [region_info]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="GAI_Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="region_info">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="region_name_en" />
+            <PropertyRef Name="region_name_ru" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="region_name_en" Type="String" MaxLength="80" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="region_name_ru" Type="String" MaxLength="80" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="subject_code" Type="Int32" />
+          <Property Name="code" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="code_okato" Type="String" MaxLength="15" FixedLength="true" Unicode="true" />
+          <Property Name="iso" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="GAI_Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="region_info" EntityType="Self.region_info" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище GAI_ModelContainer" CdmEntityContainer="GAI_Entities">
+          <EntitySetMapping Name="region_info">
+            <EntityTypeMapping TypeName="GAI_Model.region_info">
+              <MappingFragment StoreEntitySet="region_info">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="region_name_en" ColumnName="region_name_en" />
+                <ScalarProperty Name="region_name_ru" ColumnName="region_name_ru" />
+                <ScalarProperty Name="subject_code" ColumnName="subject_code" />
+                <ScalarProperty Name="code" ColumnName="code" />
+                <ScalarProperty Name="code_okato" ColumnName="code_okato" />
+                <ScalarProperty Name="iso" ColumnName="iso" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

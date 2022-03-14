@@ -57,3 +57,9 @@ C:\Users\classuser.SPBRTK\Documents\us\WSR\WSR\obj\Debug\MainWindow.baml
 C:\Users\classuser.SPBRTK\Documents\us\WSR\WSR\obj\Debug\WSR.g.resources
 C:\Users\classuser.SPBRTK\Documents\us\WSR\WSR\obj\Debug\WSR.Properties.Resources.resources
 C:\Users\classuser.SPBRTK\Documents\us\WSR\WSR\obj\Debug\WSR.csproj.GenerateResource.Cache
+C:\Users\ClassUser\3D Objects\объекты\WSR\WSR\bin\Debug\EntityFramework.dll
+C:\Users\ClassUser\3D Objects\объекты\WSR\WSR\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ClassUser\3D Objects\объекты\WSR\WSR\bin\Debug\EntityFramework.xml
+C:\Users\ClassUser\3D Objects\объекты\WSR\WSR\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ClassUser\3D Objects\объекты\WSR\WSR\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\ClassUser\3D Objects\объекты\WSR\WSR\obj\Debug\WSR_Content.g.cs
