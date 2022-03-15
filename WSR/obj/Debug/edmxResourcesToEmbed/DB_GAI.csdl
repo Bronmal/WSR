@@ -16,5 +16,18 @@
   </EntityType>
   <EntityContainer Name="GAI_Entities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="region_info" EntityType="Self.region_info" />
+    <EntitySet Name="Users" EntityType="GAI_Model.Users" />
   </EntityContainer>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="login" />
+      <PropertyRef Name="password" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="login" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="password" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="count_of_login" Type="Int32" />
+    <Property Name="time" Type="DateTime" Precision="3" />
+  </EntityType>
 </Schema>

@@ -16,7 +16,7 @@ namespace VIN_LIB
             {
                 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'
             };
-        private string countryCodes =
+        private static readonly string countryCodes =
             "AA-AH ЮАР;AJ-AN Котд'Ивуар;BA-BE Ангола;BF-BK Кения;BL-BR Танзания;CA-CE Бенин;CF-CK Мадагаскар;CL-CR Тунис;DA-DE " +
             "Египет;DF-DK Марокко;DL-DR Замбия;EA-EE Эфиопия;EF-EK Мозамбик;FA-FE Гана;FF-FK Нигерия;JA-JT Япония;KA-KE " +
             "ШриЛанка;KF-KK Израиль;KL-KR Южная Корея;KS-K0 Казахстан;LA-L0 Китай;MA-ME Индия;MF-MK Индонезия;ML-MR " +
@@ -81,20 +81,19 @@ namespace VIN_LIB
             int[] changed_letter_to_num = new int[17];
             for(int c = 0; c < char_numbers_vin.Length; c++)
             {
-                int temp;
-                if (!int.TryParse(char_numbers_vin[c].ToString(), out temp))
+                if (!int.TryParse(char_numbers_vin[c].ToString(), out int temp))
                 {
                     changed_letter_to_num[c] = dict_char_and_int[char_numbers_vin[c]];
                 }
                 else { changed_letter_to_num[c] = temp; }
-                
+
             }
             double check_sum = 0;
 
             for (int i = 0; i < changed_letter_to_num.Length; i++)
             {
                 if (i == 8) { continue; }
-                check_sum = check_sum + (changed_letter_to_num[i] * weight[i]);
+                check_sum += (changed_letter_to_num[i] * weight[i]);
             }
             if (check_sum - (Math.Floor(check_sum * 11) * 11) == 10)
             {

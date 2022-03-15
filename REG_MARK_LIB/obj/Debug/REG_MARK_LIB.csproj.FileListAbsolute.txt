@@ -6,7 +6,6 @@ D:\programming\c# colledge\WSR\REG_MARK_LIB\obj\Debug\REG_MARK_LIB.dll
 D:\programming\c# colledge\WSR\REG_MARK_LIB\obj\Debug\REG_MARK_LIB.pdb
 C:\Users\ClassUser\3D Objects\объекты\WSR\REG_MARK_LIB\bin\Debug\REG_MARK_LIB.dll
 C:\Users\ClassUser\3D Objects\объекты\WSR\REG_MARK_LIB\bin\Debug\REG_MARK_LIB.pdb
-C:\Users\ClassUser\3D Objects\объекты\WSR\REG_MARK_LIB\obj\Debug\REG_MARK_LIB.csproj.AssemblyReference.cache
 C:\Users\ClassUser\3D Objects\объекты\WSR\REG_MARK_LIB\obj\Debug\REG_MARK_LIB.csproj.CoreCompileInputs.cache
 C:\Users\ClassUser\3D Objects\объекты\WSR\REG_MARK_LIB\obj\Debug\REG_MARK_LIB.dll
 C:\Users\ClassUser\3D Objects\объекты\WSR\REG_MARK_LIB\obj\Debug\REG_MARK_LIB.pdb

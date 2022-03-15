@@ -69,3 +69,5 @@ D:\programming\c# colledge\WSR\WSR\bin\Debug\EntityFramework.xml
 D:\programming\c# colledge\WSR\WSR\bin\Debug\EntityFramework.SqlServer.xml
 D:\programming\c# colledge\WSR\WSR\bin\Debug\ru\EntityFramework.resources.dll
 D:\programming\c# colledge\WSR\WSR\obj\Debug\WSR_Content.g.cs
+C:\Users\ClassUser\3D Objects\объекты\WSR\WSR\obj\Debug\Dashboard.g.cs
+C:\Users\ClassUser\3D Objects\объекты\WSR\WSR\obj\Debug\Dashboard.baml

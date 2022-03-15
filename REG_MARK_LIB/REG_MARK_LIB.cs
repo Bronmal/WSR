@@ -20,7 +20,7 @@ namespace REG_MARK_LIB
             @"^(?<before>[abekmhopctyx])(?<number>[0-9]{3})(?<after>[abekmhopctyx]{2})(?<region>[0-9]{2,3})$",
             RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
-        private readonly char[] alphabet = new char[12] {'a', 'b', 'e', 'k', 'm', 'h', 'o', 'p', 'c', 't', 'y', 'x'};
+        //private readonly char[] alphabet = new char[12] {'a', 'b', 'e', 'k', 'm', 'h', 'o', 'p', 'c', 't', 'y', 'x'};
         public bool CheckMark(string mark)
         {
             MatchCollection matches = reg.Matches(mark);
@@ -46,22 +46,22 @@ namespace REG_MARK_LIB
                     char[] before = GetValue(match, "before").ToArray();
                     char[] after = GetValue(match, "after").ToArray();
                     char[] letters = before.Concat(after).ToArray();
-                    for (int i=letters.Length-1 ; i > 0; i--)
-                    {
-                        if (letters[i] == alphabet[alphabet.Length - 1])
-                        {
-                            letters[i] = alphabet[0];
-                            try
-                            {
-                                letters[i - 1] = alphabet[Array.IndexOf(alphabet, letters[i - 1]) + 1];
-                            }
-                            catch (IndexOutOfRangeException e)
-                            {
-                                continue;
-                            }
+                    //for (int i=letters.Length-1 ; i > 0; i--)
+                    //{
+                    //    if (letters[i] == alphabet[alphabet.Length - 1])
+                    //    {
+                    //        letters[i] = alphabet[0];
+                    //        try
+                    //        {
+                    //            letters[i - 1] = alphabet[Array.IndexOf(alphabet, letters[i - 1]) + 1];
+                    //        }
+                    //        catch (IndexOutOfRangeException e)
+                    //        {
+                    //            continue;
+                    //        }
                             
-                        }
-                    }
+                    //    }
+                    //}
                     return (letters[0] + "000" + letters[1] + letters[2] + GetValue(match, "region")).ToUpper();
                 }
             }

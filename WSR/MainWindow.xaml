@@ -13,7 +13,12 @@
             <TextBox
                 Width="250"
                 Height="25"
-                Name="enter_vin"></TextBox>
+                Name="login"
+                Margin="20"></TextBox>
+            <PasswordBox
+                Width="250"
+                Height="25"
+                Name="password"></PasswordBox>
             <Button
                 Width="250"
                 Height="30"

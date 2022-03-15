@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="Хранилище GAI_ModelContainer" CdmEntityContainer="GAI_Entities">
+  <EntityContainerMapping StorageEntityContainer="Хранилище WSR_GAIModelContainer" CdmEntityContainer="WSR_GAIEntities1">
     <EntitySetMapping Name="region_info">
-      <EntityTypeMapping TypeName="GAI_Model.region_info">
+      <EntityTypeMapping TypeName="WSR_GAIModel.region_info">
         <MappingFragment StoreEntitySet="region_info">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="region_name_en" ColumnName="region_name_en" />
@@ -15,13 +15,13 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Users">
-      <EntityTypeMapping TypeName="GAI_Model.Users">
+      <EntityTypeMapping TypeName="WSR_GAIModel.Users">
         <MappingFragment StoreEntitySet="Users">
-          <ScalarProperty Name="time" ColumnName="time" />
-          <ScalarProperty Name="count_of_login" ColumnName="count_of_login" />
-          <ScalarProperty Name="password" ColumnName="password" />
-          <ScalarProperty Name="login" ColumnName="login" />
           <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="count_of_login" ColumnName="count_of_login" />
+          <ScalarProperty Name="time" ColumnName="time" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

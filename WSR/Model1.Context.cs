@@ -13,10 +13,10 @@ namespace WSR
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class GAI_Entities : DbContext
+    public partial class WSR_GAIEntities1 : DbContext
     {
-        public GAI_Entities()
-            : base("name=GAI_Entities")
+        public WSR_GAIEntities1()
+            : base("name=WSR_GAIEntities1")
         {
         }
     
@@ -26,5 +26,6 @@ namespace WSR
         }
     
         public virtual DbSet<region_info> region_info { get; set; }
+        public virtual DbSet<Users> Users { get; set; }
     }
 }

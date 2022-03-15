@@ -21,22 +21,36 @@ namespace WSR
     /// </summary>
     public partial class MainWindow : Window
     {
+       
         public MainWindow()
         {
-            InitializeComponent();           
+            InitializeComponent();
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            VIN_LIB.VIN_LIB vIN_LIB = new VIN_LIB.VIN_LIB();
-            REG_MARK_LIB.REG_MARK_LIB rEG_MARK_LIB = new REG_MARK_LIB.REG_MARK_LIB();
-            // MessageBox.Show(vIN_LIB.CheckVIN(enter_vin.Text).ToString());
-            // MessageBox.Show(vIN_LIB.GetVINCountry(enter_vin.Text).ToString());
-            // MessageBox.Show(vIN_LIB.GetTransportYear(enter_vin.Text).ToString());
-            // MessageBox.Show(rEG_MARK_LIB.CheckMark(enter_vin.Text).ToString());
-            MessageBox.Show(rEG_MARK_LIB.GetNextMarkAfter(enter_vin.Text).ToString());
-
-
+            using (WSR_GAIEntities1 gAI_Entities = new WSR_GAIEntities1())
+            {
+                var query = gAI_Entities.Users;
+                foreach( var i in query)
+                {
+                   if (login.Text == i.login)
+                    {
+                        if (password.Password == i.password)
+                        {
+                            Dashboard dashboard = new Dashboard();
+                            dashboard.Show();
+                            this.Close();
+                        }
+                        else
+                        {
+                            i.count_of_login++;
+                        }
+                    }
+                }
+                gAI_Entities.SaveChanges();
+            }
         }
     }
 }
