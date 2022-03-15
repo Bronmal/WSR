@@ -25,7 +25,6 @@ namespace WSR
         public MainWindow()
         {
             InitializeComponent();
-            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -37,16 +36,38 @@ namespace WSR
                 {
                    if (login.Text == i.login)
                     {
-                        if (password.Password == i.password)
+                        if (i.count_of_login.Value < 3)
                         {
-                            Dashboard dashboard = new Dashboard();
-                            dashboard.Show();
-                            this.Close();
+                            if (password.Password == i.password)
+                            {
+                                Dashboard dashboard = new Dashboard();
+                                dashboard.Show();
+                                this.Close();
+                                break;
+                            }
+                            else
+                            {
+                                i.count_of_login++;
+                                if (i.count_of_login == 3)
+                                {
+                                    i.time = DateTime.Now.AddMinutes(1);
+                                    MessageBox.Show("Подожите минуту");
+                                }
+                            }
                         }
                         else
                         {
-                            i.count_of_login++;
+                            if (i.time < DateTime.Now)
+                            {
+                                i.time = null;
+                                i.count_of_login = 0;
+                            }
+                            else
+                            {
+                                MessageBox.Show("Подожите минуту");
+                            }
                         }
+                        
                     }
                 }
                 gAI_Entities.SaveChanges();
