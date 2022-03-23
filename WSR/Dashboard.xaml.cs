@@ -29,7 +29,7 @@ namespace WSR
         private void Window_Deactivated(object sender, EventArgs e)
         {
             timer.Tick += new EventHandler(timer_Tick);
-            timer.Interval = new TimeSpan(0, 0, 10);
+            timer.Interval = new TimeSpan(0, 1, 0);
             timer.Start();
         }
 
