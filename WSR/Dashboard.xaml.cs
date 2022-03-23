@@ -25,16 +25,17 @@ namespace WSR
             InitializeComponent();
         }
 
+        public DispatcherTimer timer = new DispatcherTimer();
         private void Window_Deactivated(object sender, EventArgs e)
         {
-            var timer = new DispatcherTimer();
             timer.Tick += new EventHandler(timer_Tick);
-            timer.Interval = new TimeSpan(0, 1, 0);
+            timer.Interval = new TimeSpan(0, 0, 10);
             timer.Start();
         }
 
         private void timer_Tick(object sender, EventArgs e)
         {
+            timer.Stop();
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             this.Close();
