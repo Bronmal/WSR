@@ -28,17 +28,9 @@ namespace WSR
         public DispatcherTimer timer = new DispatcherTimer();
         private void Window_Deactivated(object sender, EventArgs e)
         {
-            timer.Tick += new EventHandler(timer_Tick);
-            timer.Interval = new TimeSpan(0, 1, 0);
-            timer.Start();
-        }
+            Diactivated diactivated = new Diactivated();
+            diactivated.Window_Deactivated(sender, e);
 
-        private void timer_Tick(object sender, EventArgs e)
-        {
-            timer.Stop();
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
-            this.Close();
         }
     }
 }
